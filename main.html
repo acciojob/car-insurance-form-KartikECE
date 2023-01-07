@@ -7,22 +7,23 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="backend.php" method="get">
+	<form action="" method="post">
 		<div>
 			<label for="name">Name</label>
-			<input type="text"  id="name">
+			<input type="text"  id="name" required>
 		</div><br>
 		<div>
 			<label for="email">Email</label>
-			<input type="email" id="email">
+			<input type="email" id="email" required>
 		</div><br>
 		<div>
 			<label for="name">Gender</label>
-			Male <input type="radio" name="mygender" >female <input type="radio" name="mygender" id="">Others <input type="radio" name="mygender" >
+			<input type="radio" name="gender" value="Male" required>Male
+            <input type="radio" name="gender" value="Female" required>Female
 		</div><br>
 		<div>
 			<label for="car brands">Car Brands</label>
-			<select id="#cars" name="cars">
+			<select id="cars" name="cars">
 				<option value="BMW">BMW</option>
 				<option value="Audi">Audi</option>
 				<option value="Mercedez">Mercedez</option>
@@ -30,15 +31,15 @@
 		</div><br>
 		<div>
 			<label for="car age">Car Age</label>
-			<input type="number"  id="carage">
+			<input type="number"  id="carage" required>
 		</div><br>
 		<div>
-			<label for="date of purchase">Date of Purchase</label>
-			<input type="date"  id="dop">
+			<label for="dop">Date of Purchase</label>
+			<input type="date"  id="dop" required>
 		</div><br>
 		<div>
 			<label for="password">Password</label>
-			<input type="password" name="" id="password">
+			<input type="password" name="" id="password" required>
 		</div><br>
 		<div>
 			<button type="submit">submit button </button>
